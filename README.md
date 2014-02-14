@@ -31,7 +31,10 @@ the device was not recognized at all in `dmesg`.
 A firmware update helped, described below.
 
 Note, however, that the newer firmware does not seem to work
-with [OpenNI 1](https://github.com/OpenNI/OpenNI).
+with [OpenNI 1](https://github.com/OpenNI/OpenNI):
+
+* When using tag `Unstable-1.5.4.0` from `OpenNI/OpenNI` and `master` (`728867`) from [`PointCloudLibrary/Sensor`](https://github.com/PointCloudLibrary/Sensor/)  I get: `Open failed: Got a timeout while waiting for a network command to complete!`
+
 [OpenNI 2](https://github.com/OpenNI/OpenNI2) **works** with it,
 now finally on USB 3.0 on Linux, and its `NiViewer` can display the camera images.
 
