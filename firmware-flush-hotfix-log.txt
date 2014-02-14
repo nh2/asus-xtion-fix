@@ -1,0 +1,178 @@
+
+G:\xtion\UsbUpdate>"!Update-RD108x!.bat"
+UsbUpdate V1.0.4
+
+      406 INFO       New log started on 2014-02-14 18:20:53
+      687 INFO       OpenNI version is 1.5.4 (Build 0)-Win32 (May 20 2012 00:23:
+47)
+      891 INFO       --- Filter Info --- Minimum Severity: NONE
+     1024 VERBOSE    Searching for .\\XnDevice*.dll...
+     1159 VERBOSE    Trying to load a device 'XnDeviceSensorV2.dll'...
+     1900 INFO       device 'XnDeviceSensorV2.dll' loaded.
+     2096 VERBOSE    Initializing device sensor...
+     2338 INFO       Setting Device.ResetSensorOnStartup to 0...
+     2397 INFO       Property Device.ResetSensorOnStartup was changed to 0.
+     2442 INFO       Device.ResetSensorOnStartup was successfully set.
+     4365 VERBOSE    Connecting to USB device...
+     5854 VERBOSE    Trying to open sensor '\\?\usb#vid_1d27&pid_0600#6&109c578c
+&0&1#{c3b5f022-5a42-1980-1909-ea72095601b1}'...
+     6224 VERBOSE    USB Driver Version is: 3.1.2.0
+     6285 VERBOSE    USB Driver Current Alt Setting is: 0
+     6328 VERBOSE    Trying to open endpoint 0x4 for control out (for old firmwa
+res)...
+     6397 INFO       Connected to USB device
+     6441 INFO       Property Device.USBPath was changed to \\?\usb#vid_1d27&pid
+_0600#6&109c578c&0&1#{c3b5f022-5a42-1980-1909-ea72095601b1}.
+     9910 VERBOSE    Getting hardware versions...
+    28229 INFO       Hardware versions: FW=5.3.26 (9) HW=5 Chip=2 Sensor=0 SYS=1
+4
+    59482 WARNING    Received NACK: 2
+    60844 VERBOSE    Getting the fixed params...
+    75870 VERBOSE    Sensor serial number: 1205220596
+    76062 VERBOSE    Getting algorithm params 0x7 for resolution 0 and fps 0....
+
+    91073 VERBOSE    Property Firmware.ReferenceResolution was changed to 2.
+    91284 VERBOSE    Reading all params from firmware...
+    98206 VERBOSE    Property Firmware.DepthWhiteBalance (45) was changed to 1.
+   107586 VERBOSE    Property Firmware.DepthHoleFilter (22) was changed to 1.
+   112206 VERBOSE    Property Firmware.DepthGain (21) was changed to 42.
+   123837 VERBOSE    Property Firmware.DepthFormat (18) was changed to 1.
+   141580 VERBOSE    Property Firmware.ImageQuality (16) was changed to 3.
+   142955 VERBOSE    Property Firmware.ImageSharpness (76) was changed to 50.
+   143084 VERBOSE    Firmware params were updated.
+   143259 VERBOSE    Getting Cmos 0 VBlanking...
+   144456 INFO       Cmos 0 VBlanking: 9
+   144646 INFO       Property Device.PhysicalDeviceName was changed to PrimeSens
+e RD1.08x.
+   144711 INFO       Property Device.VendorSpecificData was changed to PS1080SOC
+.
+   144797 INFO       Property Device.ID was changed to 1205220596.
+   145265 INFO       Device sensor initialized
+   146009 INFO       >>>>>> Running the special init function InitRepairFW5327Zo
+neB!
+   147866 INFO       *** Going to clear the upgrade area...
+   149878 INFO       *** Min upgrade area offset: 0x25000
+   151104 INFO       *** Max upgrade area offset: 0x3c9c0
+   152446 VERBOSE    Getting file list
+   199834 VERBOSE    Getting file list
+   246586 INFO       *** Upgrade area is clear!
+   247039 INFO       *** There are 13 files to upload!
+   247442 INFO       *** Uploading file #1:
+   250146 INFO       >>>>>> Running the special function UpgradeSensorID1!
+   251259 INFO       Updated DeviceName to: PrimeSense RD1.08x
+   252614 INFO       Updated VendorSpecific to: PS1080SOC
+   254080 INFO       Updated SerialNumber to: 1205220596
+   256043 INFO       Temp file name: C:\Users\niklas\AppData\Local\Temp\39C5.tmp
+
+   257481 INFO       >>>>>> Done! Update was successfuly handled!
+   258625 INFO       >>>>>> File Name: C:\Users\niklas\AppData\Local\Temp\39C5.t
+mp, Offset: 0x25000, SensorSpecific:0
+   260695 INFO       Setting Device.FlashFile...
+   261883 INFO       Upload file C:\Users\niklas\AppData\Local\Temp\39C5.tmp (of
+fset 151552)
+   277709 VERBOSE    Initialized upload of 302 bytes in 14 ms
+
+   278410 VERBOSE    Uploaded 302 bytes in 1 ms
+   293464 INFO       Device.FlashFile was successfully set.
+   293675 INFO       >>>>>> Deleting the temp file...
+   294092 INFO       *** Uploading file #2:
+   294952 INFO       >>>>>> File Name: ..\FLA\SensorTecParams.xml.bin.fla, Offse
+t: 0x25200, SensorSpecific:1
+   296619 INFO       >>>>>> Skipping a sensor specific file...
+   298139 INFO       *** Uploading file #3:
+   300222 INFO       >>>>>> File Name: ..\FLA\SensorSafetyParams.xml.bin.fla, Of
+fset: 0x25230, SensorSpecific:1
+   301606 INFO       >>>>>> Skipping a sensor specific file...
+   302765 INFO       *** Uploading file #4:
+   303552 INFO       >>>>>> File Name: ..\FLA\GainControl.xml.bin.fla, Offset: 0
+x25260, SensorSpecific:0
+   307658 INFO       Setting Device.FlashFile...
+   309165 INFO       Upload file ..\FLA\GainControl.xml.bin.fla (offset 152160)
+   324715 VERBOSE    Initialized upload of 120 bytes in 14 ms
+
+   325666 VERBOSE    Uploaded 120 bytes in 1 ms
+   340225 INFO       Device.FlashFile was successfully set.
+   340501 INFO       *** Uploading file #5:
+   342377 INFO       >>>>>> File Name: ..\FLA\RegistrationParams.xml.bin.fla, Of
+fset: 0x25360, SensorSpecific:1
+   343954 INFO       >>>>>> Skipping a sensor specific file...
+   348400 INFO       *** Uploading file #6:
+   349052 INFO       >>>>>> File Name: ..\FLA\AlgorithmParams.xml.bin.fla, Offse
+t: 0x25660, SensorSpecific:0
+   350036 INFO       Setting Device.FlashFile...
+   351408 INFO       Upload file ..\FLA\AlgorithmParams.xml.bin.fla (offset 1531
+84)
+   371488 VERBOSE    Initialized upload of 736 bytes in 18 ms
+
+   377128 VERBOSE    Uploaded 736 bytes in 6 ms
+   386976 INFO       Device.FlashFile was successfully set.
+   387162 INFO       *** Uploading file #7:
+   388451 INFO       >>>>>> File Name: ..\FLA\PrimeProcessor.xml.bin.fla, Offset
+: 0x25a60, SensorSpecific:0
+   390128 INFO       Setting Device.FlashFile...
+   391687 INFO       Upload file ..\FLA\PrimeProcessor.xml.bin.fla (offset 15420
+8)
+   418278 VERBOSE    Initialized upload of 1116 bytes in 27 ms
+
+   431563 VERBOSE    Uploaded 1116 bytes in 13 ms
+   449466 INFO       Device.FlashFile was successfully set.
+   449683 INFO       *** Uploading file #8:
+   450841 INFO       >>>>>> File Name: ..\FLA\FixedParamsRD108.xml.bin.fla, Offs
+et: 0x26060, SensorSpecific:0
+   452519 INFO       Setting Device.FlashFile...
+   452631 INFO       Upload file ..\FLA\FixedParamsRD108.xml.bin.fla (offset 155
+744)
+   480583 VERBOSE    Initialized upload of 526 bytes in 26 ms
+
+   482880 VERBOSE    Uploaded 526 bytes in 2 ms
+   496137 INFO       Device.FlashFile was successfully set.
+   496359 INFO       *** Uploading file #9:
+   496976 INFO       >>>>>> File Name: ..\FLA\ImageCmos.xml.bin.fla, Offset: 0x2
+6460, SensorSpecific:0
+   497258 INFO       Setting Device.FlashFile...
+   499104 INFO       Upload file ..\FLA\ImageCmos.xml.bin.fla (offset 156768)
+   527546 VERBOSE    Initialized upload of 1648 bytes in 27 ms
+
+   551068 VERBOSE    Uploaded 1648 bytes in 24 ms
+   574095 INFO       Device.FlashFile was successfully set.
+   574296 INFO       *** Uploading file #10:
+   575462 INFO       >>>>>> File Name: ..\FLA\DepthCmos.xml.bin.fla, Offset: 0x2
+7660, SensorSpecific:0
+   577068 INFO       Setting Device.FlashFile...
+   578546 INFO       Upload file ..\FLA\DepthCmos.xml.bin.fla (offset 161376)
+   605444 VERBOSE    Initialized upload of 240 bytes in 25 ms
+
+   605901 VERBOSE    Uploaded 240 bytes in 0 ms
+   620835 INFO       Device.FlashFile was successfully set.
+   621048 INFO       *** Uploading file #11:
+   621716 INFO       >>>>>> File Name: ..\FLA\DefaultParams.xml.bin.fla, Offset:
+ 0xfffffff, SensorSpecific:2
+   621988 INFO       >>>>>> Skipping a factory offset specific file...
+   624212 INFO       *** Uploading file #12:
+   626060 INFO       >>>>>> File Name: ..\FLA\BootManager.out.bin.fla, Offset: 0
+xfffffff, SensorSpecific:2
+   630456 INFO       >>>>>> Skipping a factory offset specific file...
+   630571 INFO       *** Uploading file #13:
+   632326 INFO       >>>>>> File Name: ..\FLA\source.out.bin.fla, Offset: 0x2796
+0, SensorSpecific:0
+   633427 INFO       Setting Device.FlashFile...
+   634844 INFO       Upload file ..\FLA\source.out.bin.fla (offset 162144)
+  1151167 VERBOSE    Initialized upload of 134876 bytes in 515 ms
+..........................
+  3689400 VERBOSE    Uploaded 134876 bytes in 2538 ms
+  4520941 INFO       Device.FlashFile was successfully set.
+  4521092 INFO       *** Reseting the sensor...
+  4521251 INFO       Setting Device.Reset to 0...
+  4521870 VERBOSE    Setting mode to 4...
+  4524998 INFO       Device.Reset was successfully set.
+  4525650 INFO       ***************************************
+  4527030 INFO                        SUCCESS!
+  4527087 INFO       ***************************************
+  4528447 VERBOSE    Shutting down USB depth read thread...
+  4530375 VERBOSE    Shutting down USB image read thread...
+  4531575 VERBOSE    Device closed successfully
+  4536534 VERBOSE    Shutting down Scheduler thread...
+  4538833 VERBOSE    Shutting down USB depth read thread...
+  4539396 VERBOSE    Shutting down USB image read thread...
+  4541039 VERBOSE    Device closed successfully
+Press any key to continue . . .
