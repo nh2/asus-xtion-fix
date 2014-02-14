@@ -19,13 +19,13 @@ You might get `dmesg` messages like:
 ```
 
 [Some sources](http://www.pcl-developers.org/xhci-hcd-I-hate-you-USB-3-0-and-Primesense-Asus-Xtion-td5707949.html)
-recommended to blacklist the USB 3.0 driver (`xhci_hcd`) and use the
-USB 2.0 driver only (`ehci_hcd`).
+recommended to blacklist the USB 3.0 driver `xhci_hcd` and use the
+USB 2.0 driver `ehci_hcd` only.
 (On e.g. Ubuntu you have to recompile the kernel for this, setting
 these drivers to be built as modules instead of built into the kernel,
 changing `CONFIG_USB_XHCI_HCD` and `CONFIG_USB_XHCI_HCD` from `y` to `m`).
 
-However, this didn't work for my computer, and after unloading the USB 3.0 driver,
+However, this did not work for my computer, and after unloading the USB 3.0 driver,
 the device was not recognized at all in `dmesg`.
 
 A firmware update helped, described below.
@@ -51,7 +51,7 @@ Unpack the [FW579-RD1081-112v2.zip](FW579-RD1081-112v2.zip) ZIP file, go into `U
 Extract the whole ZIP file, the files in the `FLA` folder are the
 actual firmware.
 
-You should see an output like in the file [firmware-flush-hotfix-log.txt]().
+You should see an output like in the file [firmware-flush-hotfix-log.txt](firmware-flush-hotfix-log.txt).
 
 
 Original source
